@@ -1,0 +1,30 @@
+/* Estilos de cada entrada */
+
+@media screen and (max-width: 768px) {
+  .entry {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .entry {
+    width: 66%;
+  }
+}
+
+/* Estilos responsive */
+.entry {
+  flex-direction: column;
+}
+
+.entry * {
+  color: var(--white-color);
+}
+
+.entry .fecha {
+  font-weight: initial;
+}
+
+.entry .act {
+  color: var(--yellow-color);
+}

@@ -1,0 +1,35 @@
+/* Estilos del pie */
+
+.pie {
+  padding: 2rem;
+  background-color: var(--blue1-color);
+  /* Estilos responsive */
+  flex-direction: column;
+}
+
+.pie * {
+  font-size: 1.75rem;
+  color: var(--white-color);
+}
+
+.pie .negrita {
+  color: var(--yellow-color);
+}
+
+@media screen and (max-width: 375px) {
+  .pie > nav {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .pie > nav {
+    width: 10%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .pie > nav {
+    width: 7.5%;
+  }
+}

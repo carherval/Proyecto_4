@@ -1,0 +1,43 @@
+/* Estilos de la sección Inicio */
+
+/* Estilos responsive */
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .home {
+    justify-content: space-evenly;
+  }
+}
+
+.home .saludo {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .home .saludo {
+    width: 75%;
+  }
+}
+
+/* Estilos responsive */
+@media screen and (min-width: 769px) {
+  .home .saludo {
+    align-items: start;
+  }
+}
+
+.home .saludo * {
+  color: var(--white-color);
+}
+
+.home .saludo .negrita {
+  color: var(--yellow-color);
+}
+
+.home > img {
+  width: 25%;
+}

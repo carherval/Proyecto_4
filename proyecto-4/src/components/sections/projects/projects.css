@@ -1,0 +1,14 @@
+/* Estilos de la sección Proyectos */
+
+/* Estilos responsive */
+.projects {
+  flex-direction: column;
+}
+
+.projects > div {
+  width: 100%;
+  /* Estilos responsive */
+  justify-content: space-evenly;
+  align-items: last baseline;
+  flex-wrap: wrap;
+}

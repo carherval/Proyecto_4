@@ -1,0 +1,56 @@
+/* Estilos de la sección Contacto */
+
+/* Estilos responsive */
+.contact,
+.contact > div {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .contact > div {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .contact > div {
+    width: 66%;
+  }
+}
+
+.contact span {
+  color: var(--yellow-color);
+}
+
+/* Formulario de contacto */
+.contact .form-contacto {
+  width: 100%;
+  /* Estilos responsive */
+  flex-direction: column;
+}
+
+/* Estilos responsive */
+.contact .temas {
+  flex-wrap: wrap;
+}
+
+/* Estilos responsive */
+.contact .campos {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .campos {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .contact .campos {
+    width: 66%;
+  }
+}
+
+.contact .campos > * {
+  width: 100%;
+}

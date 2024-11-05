@@ -1,0 +1,52 @@
+/* Estilos de la cabecera */
+
+.cabecera {
+  padding: 2rem;
+  background-color: var(--blue1-color);
+  /* Estilos responsive */
+  justify-content: space-between;
+}
+
+.cabecera * {
+  color: var(--white-color);
+}
+
+.cabecera > nav a {
+  font-size: 1.75rem;
+}
+
+.cabecera > nav a:hover {
+  color: var(--yellow-color);
+  transition: 0.25s;
+}
+
+/* Menú desplegable de la cabecera */
+/* Estilos responsive */
+.cabecera .movil {
+  align-self: start;
+}
+
+.cabecera .movil > ul {
+  background-color: var(--blue1-color);
+  position: relative;
+  left: -2rem;
+  /* Estilos responsive */
+  flex-direction: column;
+  align-items: start;
+  gap: 0;
+}
+
+.cabecera .movil > ul > li {
+  padding: 0 2rem 2rem;
+}
+
+/* Estilos responsive */
+.cabecera .abrir,
+.cabecera .cerrar {
+  justify-content: end;
+}
+
+.cabecera img {
+  width: 10%;
+  filter: invert(1);
+}

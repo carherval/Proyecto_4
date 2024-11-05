@@ -3,11 +3,31 @@
 
 /* Variables */
 :root {
-  --black-color: #000000;
-  --white-color: #ffffff;
-  --grey-color: #f2f2f2;
-  --red-color: #e60119;
-  font-size: 12px;
+  --white-color: rgb(255, 255, 255);
+  --blue1-color: rgb(47, 85, 151);
+  --blue2-color: rgb(52, 119, 169);
+  --blue3-color: rgb(107, 155, 193);
+  --blue4-color: rgb(223, 230, 244);
+  --yellow-color: rgb(255, 155, 0);
+}
+
+/* Tamaño de fuente */
+@media screen and (max-width: 425px) {
+  :root {
+    font-size: 6px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+  :root {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  :root {
+    font-size: 12px;
+  }
 }
 
 /* Estilos generales iniciales */
@@ -17,17 +37,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
-  color: var(--black-color);
-  background-color: var(--white-color);
+  font-size: 2.5rem;
+  color: var(--blue1-color);
 }
 
 /* Estilos responsive iniciales */
 .flex {
   display: flex;
-}
-
-.container {
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -38,4 +54,74 @@
 /* Estilos generales */
 .oculto {
   display: none;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.blue2 {
+  background-color: var(--blue2-color);
+}
+
+.blue4 {
+  background-color: var(--blue4-color);
+}
+
+/* Anchura mínima */
+@media screen and (max-width: 425px) {
+  body {
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  body {
+    min-width: 426px;
+  }
+}
+
+/* Encabezados */
+h1 {
+  font-size: 3.5rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    width: 65%;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  h1 {
+    width: 55%;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  h1 {
+    width: 50%;
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+/* Listas */
+li {
+  list-style-type: none;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+}
+
+/* Secciones del portfolio */
+article {
+  padding: 2rem;
 }

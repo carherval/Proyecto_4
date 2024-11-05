@@ -1,0 +1,24 @@
+/* Estilos de la sección Habilidades */
+
+/* Estilos responsive */
+.skills {
+  flex-direction: column;
+}
+
+/* Estilos responsive */
+.skills > ul {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .skills li {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .skills li {
+    width: 15%;
+  }
+}

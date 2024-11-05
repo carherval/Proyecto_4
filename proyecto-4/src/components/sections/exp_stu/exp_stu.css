@@ -1,0 +1,33 @@
+/* Estilos de la sección Experiencia / Estudios */
+
+.exp-stu * {
+  color: var(--white-color);
+}
+
+/* Estilos responsive */
+.exp-stu > div {
+  flex-direction: column;
+}
+
+.exp-stu nav {
+  width: 100%;
+}
+
+/* Estilos responsive */
+.exp-stu ul {
+  justify-content: space-evenly;
+}
+
+.exp-stu nav a {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.exp-stu .active > a {
+  color: var(--yellow-color);
+}
+
+.exp-stu .not-active > a:hover {
+  color: var(--yellow-color);
+  transition: 0.25s;
+}

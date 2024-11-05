@@ -1,0 +1,6 @@
+/* Estilos de cada red social */
+
+.rrss > img {
+  width: 80%;
+  filter: invert(1);
+}

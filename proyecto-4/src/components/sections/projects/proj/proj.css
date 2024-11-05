@@ -1,0 +1,54 @@
+/* Estilos de cada proyecto */
+
+@media screen and (max-width: 425px) {
+  .project {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .project {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .project {
+    width: 30%;
+  }
+}
+
+.project {
+  border-radius: 2rem;
+  background-color: var(--blue4-color);
+  /* Estilos responsive */
+  flex-direction: column;
+}
+
+.project > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.project > h3 {
+  font-size: 1.75rem;
+}
+
+.project p {
+  font-size: 1.5rem;
+}
+
+.project > a {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--white-color);
+  background-color: var(--blue2-color);
+}
+
+.project > a:hover {
+  color: var(--blue2-color);
+  background-color: var(--yellow-color);
+  transition: 0.25s;
+}

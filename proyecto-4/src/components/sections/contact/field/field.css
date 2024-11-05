@@ -1,0 +1,71 @@
+/* Estilos de cada elemento del formulario de contacto */
+
+/* Check buttons */
+.chck-btn {
+  width: 0;
+}
+
+.chck-btn + label {
+  border: solid 0.25rem var(--blue2-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.chck-btn:focus-visible + label {
+  box-shadow: 0.5rem 0.5rem 1rem var(--blue3-color);
+}
+
+.chck-btn:checked + label {
+  color: var(--white-color);
+  background-color: var(--blue2-color);
+}
+
+/* Campos de texto */
+.txt-fld {
+  border: solid 0.25rem var(--blue2-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.75rem;
+}
+
+.txt-fld::placeholder {
+  color: var(--blue3-color);
+}
+
+.txt-fld:focus {
+  outline: none;
+}
+
+/* Áreas de texto */
+.txt-area-fld {
+  height: 20rem;
+  border: solid 0.25rem var(--blue2-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.75rem;
+}
+
+.txt-area-fld::placeholder {
+  color: var(--blue3-color);
+}
+
+.txt-area-fld:focus {
+  outline: none;
+}
+
+/* Botones */
+.btn {
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.75rem;
+  color: var(--white-color);
+  background-color: var(--blue2-color);
+  cursor: pointer;
+}
+
+.btn > img {
+  width: 3.5%;
+  filter: invert(1);
+}
